@@ -169,73 +169,65 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
 
 <form id="form">
 
-<input required placeholder="Имя">
+<input id="firstName" type="text" placeholder="Имя" required>
 
-<input required placeholder="Фамилия">
+<input id="lastName" type="text" placeholder="Фамилия" required>
 
-<input placeholder="Телефон">
+<input id="phone" type="tel" placeholder="Телефон">
 
-<select>
-
-<option>Буду на банкете</option>
-
-<option>Да</option>
-
-<option>Нет</option>
-
+<label>Будете присутствовать?</label>
+<select id="attending">
+    <option value="Да">Да</option>
+    <option value="Нет">Нет</option>
 </select>
 
-<select>
-
-<option>Мясо</option>
-
-<option>Рыба</option>
-
-<option>Вегетарианское</option>
-
+<label>Предпочтения по еде</label>
+<select id="food">
+    <option value="Мясо">Мясо</option>
+    <option value="Рыба">Рыба</option>
+    <option value="Вегетарианское">Вегетарианское</option>
 </select>
 
-<label>
-
-Алкоголь
-
-</label>
+<label>Алкоголь</label>
 
 <div class="checks">
 
-<label><input type="checkbox"> Красное вино</label>
+<label><input type="checkbox" value="Красное вино"> Красное вино</label>
 
-<label><input type="checkbox"> Белое вино</label>
+<label><input type="checkbox" value="Белое вино"> Белое вино</label>
 
-<label><input type="checkbox"> Шампанское</label>
+<label><input type="checkbox" value="Шампанское"> Шампанское</label>
 
-<label><input type="checkbox"> Виски</label>
+<label><input type="checkbox" value="Виски/Коньяк"> Виски/Коньяк</label>
 
-<label><input type="checkbox"> Безалкогольные</label>
+<label><input type="checkbox" value="Безалкогольные"> Безалкогольные</label>
 
 </div>
 
-<select>
+<label>Нужен трансфер?</label>
 
-<option>Трансфер нужен?</option>
+<select id="transfer">
 
-<option>Да</option>
+<option value="Да">Да</option>
 
-<option>Нет</option>
+<option value="Нет">Нет</option>
 
 </select>
 
-<input placeholder="Дети (количество или Нет)">
+<input id="children" placeholder="Дети (количество или Нет)">
 
-<input placeholder="Любимые песни">
+<input id="music" placeholder="Любимые песни">
 
-<textarea placeholder="Комментарий"></textarea>
+<textarea id="comment" placeholder="Комментарий"></textarea>
 
-<button>Отправить</button>
+<button type="submit">
+Отправить
+</button>
 
 </form>
 
 <div id="success"></div>
+
 
 </section>
 
@@ -255,7 +247,8 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
 
 </p>
 
-<iframesrc="https://yandex.ru/map-widget/v1/?text=МосковскаяобластьМолоковоСтроительная15вл1"
+<iframe
+src="https://yandex.ru/map-widget/v1/?text=МосковскаяобластьМолоковоСтроительная15вл1"
 
 loading="lazy">
 
