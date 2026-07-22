@@ -3,10 +3,13 @@ const envelope = document.querySelector(".envelope");
 
 // При клике открываем конверт
 envelope.addEventListener("click", () => {
+    const tap = document.querySelector(".tap");
+    tap.style.opacity = "0";
+    tap.style.transition = "opacity 0.3s ease";
 
     // чтобы нельзя было нажать второй раз
     if (intro.classList.contains("open")) return;
-
+    tap.style.display = "none";  
     // открываем клапан
     envelope.classList.add("open");
 
